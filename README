@@ -1,0 +1,14 @@
+- docker build -t kelvin/posts .               # build a image based on the Dockerfile in the current directory. Tag it as kelvin/posts
+- docker run [image id or tag]                 # create and start a container based on the image id or tag
+- docker run -it [image id or tag] [cmd]       # create and start a container based on the image id or tag, but also override the default command
+- docker ps                                    # list all running containers
+- docker exec -it [container id] [cmd]         # run a command in a running container
+- docker logs [container id]                   # fetch the logs of a container
+
+
+- docker build -t kelvin/posts:0.0.1 .         # build a image based on the Dockerfile in the current directory. Tag it as kelvin/posts:0.0.1
+
+- kubectl apply -f posts.yaml                  # create a deployment and a service based on the posts.yaml file
+- kubectl get pods                             # list all pods
+- kubectl logs [pod id or pod name]            # fetch the logs of a pod
+- kubectl exec -it [pod id or pod name] [cmd]  # run a command in a running pod
